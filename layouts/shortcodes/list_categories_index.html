@@ -1,0 +1,33 @@
+<style>
+  .button:link, .button:visited {
+    background-color: #6a788a;
+    border-radius: 8px;
+    color: #ffffff;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    outline: none;
+    font-size: 16px;
+    opacity: 0.6
+  }
+  .button:hover {
+      opacity: 1
+  }
+</style>
+
+{{ range site.Taxonomies.categories }}
+  <a href="#{{.Page.Title}}" class="button">{{.Page.Title}}</a>
+{{end}}
+
+
+<ul class="list-unstyled">
+  {{ range site.Taxonomies.categories }}
+  <li id="{{.Page.Title}}"><a href="{{.Page.RelPermalink}}">{{.Page.Title}}</a> ({{len .Page.Pages}})</li>
+    <ul>
+      {{ range sort .Page.Pages "Date" "desc"}}
+        <li><small>{{ .Page.Date.Format "Jan 2, 2006" }}</small> &raquo; <a href="{{.Page.RelPermalink}}">{{.Page.Title}}</a></li>
+      {{ end }}
+    </ul>
+  {{ end }}
+</ul>
