@@ -75,7 +75,7 @@ user_groups:
 
 # TODO: Xingdong Zuo is ...a machine learning engineer in where...
 ---
-He holds a M.Sc. degree in Machine Learning from University of Freiburg. His research interests include causal inference, counterfactual reasoning and model-based planning in reinforcement learning. 
+I completed my M.Sc. degree in Machine Learning at the University of Freiburg. My research interests include causal inference, counterfactual reasoning, and model-based planning in reinforcement learning. 
 
-He is also interested in applying machine learning techniques to optimize well-being including preventive healthcare and mental health. 
+I am also interested in applying machine learning techniques to optimize well-being, in particular preventive healthcare and mental health. 
 
